@@ -1,0 +1,43 @@
+.m {
+  position: relative;
+}
+.m .pizza {
+  width: 300px;
+  margin-left: 30%;
+  position: relative;
+  border-radius: 50%;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.m .pizza img {
+  width: 500px;
+  height: 500px;
+}
+.m .pizza .terkib {
+  width: 100px;
+  position: relative;
+  top: -350px;
+  left: 47%;
+  transform: translate(-47%, -50%);
+}
+.m .pizza .terkib img {
+  width: 100px;
+  height: 100px;
+}
+.m .ref {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 0%;
+}
+.m .ref .div {
+  display: flex;
+}
+.m .ref .terkib {
+  width: 100px;
+}
+.m .ref .terkib img {
+  width: 100px;
+  height: 100px;
+}/*# sourceMappingURL=drag.css.map */

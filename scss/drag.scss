@@ -1,0 +1,76 @@
+.m {
+    position: relative;
+
+    .pizza {
+        width: 300px;
+        margin-left: 30%;
+        position: relative;
+        border-radius: 50%;
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+
+        img {
+            width: 500px;
+            height: 500px;
+        }
+
+        .terkib {
+            width: 100px;
+            position: relative;
+            top: -350px;
+            left: 47%;
+            transform: translate(-47%, -50%);
+
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+    }
+
+    .ref {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        top: 0%;
+
+        .div {
+            display: flex;
+        }
+
+        .terkib {
+            width: 100px;
+
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+        // .pomidor1 {
+        //     position: relative;
+        //     margin-left: 120%;
+        //     opacity: 0;
+        //     visibility: hidden;
+
+        //     &.p {
+        //         visibility: visible;
+        //         opacity: 1;
+        //         margin-left: 120%;
+        //     }
+
+        //     img {
+        //         width: 50px;
+        //         height: 50px;
+        //         object-fit: contain;
+        //         border-radius: 50%;
+        //     }
+        // }
+
+
+
+
+    }
+}
