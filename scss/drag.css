@@ -29,7 +29,7 @@
   position: absolute;
   width: 300px;
   height: 300px;
-  top: 0%;
+  top: -5%;
 }
 .m .ref .div {
   display: flex;
@@ -40,4 +40,19 @@
 .m .ref .terkib img {
   width: 100px;
   height: 100px;
+}
+.m .ref .pomidor1 {
+  position: relative;
+  left: 100%;
+  display: none;
+}
+.m .ref .pomidor1.p {
+  display: block;
+  margin-left: 100%;
+}
+.m .ref .pomidor1 img {
+  margin-left: 90px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }/*# sourceMappingURL=drag.css.map */

@@ -34,7 +34,7 @@
         position: absolute;
         width: 300px;
         height: 300px;
-        top: 0%;
+        top: -5%;
 
         .div {
             display: flex;
@@ -49,27 +49,27 @@
             }
         }
 
-        // .pomidor1 {
-        //     position: relative;
-        //     margin-left: 120%;
-        //     opacity: 0;
-        //     visibility: hidden;
+        .pomidor1 {
+            position: relative;
+            left: 100%;
+            display: none;
+            // opacity: 0;
+            // visibility: hidden;
 
-        //     &.p {
-        //         visibility: visible;
-        //         opacity: 1;
-        //         margin-left: 120%;
-        //     }
+            &.p {
+                // visibility: visible;
+                // opacity: 1;
+                display: block;
+                margin-left: 100%;
+            }
 
-        //     img {
-        //         width: 50px;
-        //         height: 50px;
-        //         object-fit: contain;
-        //         border-radius: 50%;
-        //     }
-        // }
-
-
+            img {
+                margin-left: 90px;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+            }
+        }
 
 
     }
