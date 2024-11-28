@@ -1,58 +1,227 @@
 .m {
   position: relative;
 }
+.m #but {
+  position: absolute;
+  bottom: -20%;
+  left: 45%;
+  transform: translate(-20%, -45%);
+  padding: 15px 30px;
+  z-index: 1;
+  font-size: 1rem;
+  transition: 0.5s;
+  border: none;
+}
+.m #but:hover {
+  color: white;
+}
+.m #but:hover::before {
+  width: 50%;
+  left: 0;
+}
+.m #but:hover::after {
+  width: 50%;
+  right: 0;
+}
+.m #but::before {
+  content: "";
+  position: absolute;
+  background-color: rgb(226, 43, 43);
+  width: 0%;
+  height: 100%;
+  top: 0%;
+  left: 50%;
+  z-index: -1;
+  transition: 1s;
+}
+.m #but::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(28, 0, 128);
+  width: 0%;
+  height: 100%;
+  top: 0%;
+  right: 50%;
+  z-index: -1;
+  transition: 1s;
+}
+.m .list {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.m .list button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  background-color: blue;
+  transition: 0.5s;
+}
+.m .list button:hover {
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(248, 2, 2, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+.m .ket {
+  position: absolute;
+  top: 0%;
+  right: 15%;
+  transform: translateX(-15%);
+}
+.m .ket img {
+  width: 100px;
+  height: 100px;
+}
+.m .chili {
+  position: absolute;
+  top: 0;
+  left: 45%;
+  transform: translateX(-45%);
+  opacity: 0;
+  visibility: hidden;
+  transition: 1s;
+}
+.m .chili.chil {
+  opacity: 1;
+  visibility: visible;
+}
+.m .chili.sol {
+  margin-left: 50px;
+}
+.m .chili img {
+  width: 180px;
+  height: 180px;
+}
+.m .ketcap {
+  position: absolute;
+  top: -19%;
+  left: 23%;
+  transform: translate(-19, -23%);
+  width: 200px;
+  height: 200px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.7s;
+}
+.m .ketcap.ksos {
+  opacity: 1;
+  visibility: visible;
+}
+.m .ketcap img {
+  border-radius: 50%;
+  width: 700px;
+  height: 700px;
+  -webkit-clip-path: circle(28.3% at 50% 50%);
+          clip-path: circle(28.3% at 50% 50%);
+}
+.m .ketcap .terkib {
+  width: 100px;
+  position: relative;
+  z-index: 999;
+  top: -370px;
+  left: 55%;
+  transform: translate(-50%, -55%);
+}
+.m .ketcap .terkib img {
+  position: relative;
+  z-index: 999;
+  width: 70px;
+  height: 70px;
+}
 .m .pizza {
   width: 300px;
-  margin-left: 30%;
   position: relative;
+  margin-left: 30%;
   border-radius: 50%;
   margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
+  border-radius: 50%;
+  transition: 2s;
 }
 .m .pizza img {
-  width: 500px;
-  height: 500px;
+  width: 510px;
+  height: 510px;
+}
+.m .pizza.b .terkib {
+  width: 100px;
+  position: relative;
+  top: -350px;
+  left: 54%;
+  transform: translate(-50%, -54%);
+}
+.m .pizza.b .terkib img {
+  width: 70px;
+  height: 70px;
+}
+.m .pizza.b img {
+  transition: 0.8s;
+  width: 510px;
+  height: 510px;
+}
+.m .pizza.o .terkib {
+  width: 75px;
+  position: relative;
+  top: -330px;
+  left: 39%;
+  transform: translate(-50%, -39%);
+}
+.m .pizza.o .terkib img {
+  width: 60px;
+  height: 60px;
+}
+.m .pizza.o img {
+  transition: 0.8s;
+  width: 450px;
+  height: 450px;
+}
+.m .pizza.k .terkib {
+  width: 80px;
+  position: relative;
+  top: -300px;
+  left: 43%;
+  transform: translate(-50%, -43%);
+}
+.m .pizza.k .terkib img {
+  width: 50px;
+  height: 50px;
+}
+.m .pizza.k img {
+  transition: 0.8s;
+  width: 400px;
+  height: 400px;
 }
 .m .pizza .terkib {
   width: 100px;
   position: relative;
-  top: -350px;
-  left: 47%;
-  transform: translate(-47%, -50%);
+  top: -370px;
+  left: 55%;
+  transform: translate(-50%, -55%);
+  z-index: 999;
 }
 .m .pizza .terkib img {
-  width: 100px;
-  height: 100px;
+  position: relative;
+  z-index: 999;
+  width: 70px;
+  height: 70px;
 }
 .m .ref {
   position: absolute;
   width: 300px;
   height: 300px;
   top: -5%;
+  left: 2%;
 }
 .m .ref .div {
   display: flex;
 }
 .m .ref .terkib {
+  z-index: 999;
   width: 100px;
 }
 .m .ref .terkib img {
-  width: 100px;
-  height: 100px;
-}
-.m .ref .pomidor1 {
-  position: relative;
-  left: 100%;
-  display: none;
-}
-.m .ref .pomidor1.p {
-  display: block;
-  margin-left: 100%;
-}
-.m .ref .pomidor1 img {
-  margin-left: 90px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
+  z-index: 999;
+  width: 60px;
+  height: 60px;
 }/*# sourceMappingURL=drag.css.map */
